@@ -4,25 +4,6 @@ app-landing-page {
     transition: all 1s ease-in-out;
 }
 
-.navigation-bar {
-    background-color: $primary-color-dark;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    height: 3em;
-    width: 100%;
-    z-index: 1;
-    overflow: hidden;
-
-    .temporary-navbar {
-        display: flex;
-        flex-direction: row;
-        flex-grow: 1;
-        justify-content: center;
-        text-align: center;
-    }
-}
-
 .login-form {
     display: flex;
     flex-direction: column;

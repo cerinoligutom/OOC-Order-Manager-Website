@@ -6,8 +6,9 @@
 
 
 ## Setup Environment
-### Prerequisites
-  - `angular-cli`
-  - `node`
 - run `npm install` on the directory to install dependencies
 - run `ng serve -o` to start the project
+
+### Prerequisites
+- `angular-cli`
+- `node`

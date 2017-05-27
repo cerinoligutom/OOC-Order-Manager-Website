@@ -4,31 +4,10 @@ app-landing-page {
     transition: all 1s ease-in-out;
 }
 
-.login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    .username, .password {
-        margin-bottom: 1em;
-        width: 40%;
-    }
-
-    .registration-notes {
-        text-align: center;
-        margin: .5em;
-    }
-}
-
 .parallax-header {
     overflow: hidden;
     position: relative;
     height: 35rem;
-    background-image: url("/assets/images/blue_background.jpg");
-    background-size: auto;
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 
     .parallax-layer-1 {
         background-image: url("/assets/images/header_bg_1.png");
@@ -64,40 +43,42 @@ app-landing-page {
     }
 }
 
-.parallax-section-1 {
-    overflow: hidden;
-    position: relative;
-    height: 20rem;
-    background-image: url("/assets/images/aqours.png");
-    background-size: cover;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 section {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    background-color: $primary-color;
+    
+    &:nth-child(even) {
+        background-color: $primary-color;
+    }
+    &:nth-child(odd) {
+        color: $primary-text-color;
+    }
 
     div {
         margin: 1em auto;
     }
 
     h3 {
-        color: $primary-color-text;
         text-align: center;
     }
 
     p {
-        color: $primary-color-text;
         text-align: justify;
     }
 }
 
 .login-section {
     .member-notes {
-        margin: 1em auto;
+        margin: .5em auto;
     }
+    .registration-notes {
+        text-align: center;
+        margin: .5em;
+    }
+}
+
+.features-section {
+    display: flex;
+    flex-direction: row;
 }

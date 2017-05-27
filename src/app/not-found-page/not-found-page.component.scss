@@ -1,0 +1,42 @@
+@import '../shared/styles/_variables.scss';
+
+.parallax-header {
+    overflow: hidden;
+    position: relative;
+    height: 15rem;
+
+    .parallax-layer-1 {
+        background-image: url("/assets/images/header_bg_1.png");
+        background-size: 1000px auto;
+        background-position: right top;
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: .7;
+    }
+
+    .parallax-layer-2 {
+        background-image: url("/assets/images/logo.png");
+        background-size: 720px auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 136px;
+        top: 45%;
+        width: 100%;
+    }
+}
+
+.page-not-found-content {
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+
+    .title {
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,16 @@
+<!-- 
+  TODO: Improve User Experience
+  1. Show a feedback if login failed
+  2. Show a feedback on invalid inputs (e.g. User/Pass is empty, Password is too short);
+-->
+<form class="login-form">
+  <div class="form-group">
+    <label class="username" for="formGroupExampleInput">Username</label>
+    <input type="text" [(ngModel)]="input.username" name="username" class="form-control" id="username" placeholder="Username" required>
+  </div>
+  <div class="form-group">
+    <label class="password" for="formGroupExampleInput2">Password</label>
+    <input type="password" [(ngModel)]="input.password" name="password" class="form-control" id="password" placeholder="Password" required>
+  </div>
+  <button class="btn btn-success" type="submit" (click)="submit()">Log In</button>
+</form>

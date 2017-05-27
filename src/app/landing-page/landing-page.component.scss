@@ -8,11 +8,6 @@ app-landing-page {
     overflow: hidden;
     position: relative;
     height: 35rem;
-    // background-image: url("/assets/images/blue_background.jpg");
-    // background-size: auto;
-    // background-position: right top;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
 
     .parallax-layer-1 {
         background-image: url("/assets/images/header_bg_1.png");
@@ -48,21 +43,11 @@ app-landing-page {
     }
 }
 
-.parallax-section-1 {
-    overflow: hidden;
-    position: relative;
-    height: 20rem;
-    background-image: url("/assets/images/aqours.png");
-    background-size: cover;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 section {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
+    
     &:nth-child(even) {
         background-color: $primary-color;
     }

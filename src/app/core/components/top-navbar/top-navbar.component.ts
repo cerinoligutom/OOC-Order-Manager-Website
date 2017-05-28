@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { UserService } from '../../core/index';
+import { UserService } from '../../services/index';
 
 interface NavbarItem {
   text: string;
@@ -32,7 +32,7 @@ export class TopNavbarComponent implements OnInit {
   }
 
   navigateToNewsfeed() {
-    const route = ['/feed'];
+    const route = ['/newsfeed'];
     this._router.navigate(route);
     return false;
   }

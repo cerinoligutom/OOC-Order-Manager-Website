@@ -1,2 +1,1 @@
-export * from './shared.module';
-export * from './top-navbar/top-navbar.component';
+// Fill this up if there are any shared components/services/directives/pipes/etc.

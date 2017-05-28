@@ -50,6 +50,9 @@ section {
     
     &:nth-child(even) {
         background-color: $primary-color;
+        p {
+            color: $primary-color-text;
+        }
     }
     &:nth-child(odd) {
         color: $primary-text-color;

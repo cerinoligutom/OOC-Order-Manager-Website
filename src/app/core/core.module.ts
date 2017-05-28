@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 
-import { LoginComponent, UserService } from './index';
+import { SharedModule } from '../shared/shared.module';
+import { LoginComponent, TopNavbarComponent, UserService } from './index';
 
 
 @NgModule({
-    imports: [CommonModule, FormsModule],
-    exports: [CommonModule, FormsModule, LoginComponent],
-    declarations: [LoginComponent],
+    imports: [SharedModule],
+    exports: [SharedModule, LoginComponent, TopNavbarComponent],
+    declarations: [LoginComponent, TopNavbarComponent],
     providers: [UserService],
 })
 export class CoreModule { }

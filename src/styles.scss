@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "app/shared/styles/_variables.scss";
 
@@ -15,6 +16,10 @@ body {
     width: 100%;
     color: $primary-color-text;
     background-color: $background-color;
+
+    p {
+        color: $primary-text-color;
+    }
 }
 
 input {
@@ -23,9 +28,9 @@ input {
 }
 
 /*** Angular 2 link without href ***/
-a:not([href]){
-    cursor: pointer; 
-    -webkit-user-select: none; 
-    -moz-user-select: none; 
-    user-select: none
+a:not([href]) {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }

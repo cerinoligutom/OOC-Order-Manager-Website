@@ -21,3 +21,11 @@ input {
     border-radius: 8px;
     padding: .3em .8em;
 }
+
+/*** Angular 2 link without href ***/
+a:not([href]){
+    cursor: pointer; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    user-select: none
+}

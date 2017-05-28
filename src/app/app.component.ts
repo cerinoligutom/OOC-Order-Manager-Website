@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from './core/index';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(private _userService: UserService) { }
 
+  isLoggedIn() {
+    return this._userService.isLoggedIn();
+  }
 }

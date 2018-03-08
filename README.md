@@ -1,3 +1,5 @@
+# Migrated this repository to Bitbucket so this is no longer maintained
+
 # OOC-Order-Manager-Website
 
 ## About
